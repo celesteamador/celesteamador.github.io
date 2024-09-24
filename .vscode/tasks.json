@@ -12,6 +12,22 @@
       "problemMatcher": [],
       "detail": "Runs the Jekyll server with live reload."
     },
+    
+    {
+      "version": "2.0.0",
+      "tasks": [
+          // ... (previous task)
+          {
+              "type": "launch",
+              "request": "launch",
+              "name": "Jekyll Server",
+              "program": "${workspaceFolder}/_site",
+              "args": ["--host", "0.0.0.0", "--port", "4000"]
+          }
+      ]
+  }
+
+
     {
       "label": "Build Jekyll Site",
       "type": "shell",
