@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run Jekyll Server",
+      "label": "Jekyll Serve",
       "type": "shell",
-      "command": "./tools/run.sh",
+      "command": "bundle exec jekyll serve",
       "group": {
         "kind": "build",
         "isDefault": true
