@@ -4,25 +4,20 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-### Hi there 👋
-- 👩‍💻 I'm currently pursuing a <b>Computer Systems Engineering Degree</b> at <b>UVEG</b> 🐨
-- 🌍 I speak 3 languages (Spanish, English and German)
-- 👾 I'm doing a <b>Cybersecurity Specialization</b> at the <b>Cibersecurity Academy</b> (Academia de Ciberseguridad)
-  - Networks ✅
-  - Linux & Operating Systems
-- 🏁 I finished the <b>Back-End</b> track from the <b>Oracle Next Education</b> program in partnership with Alura LATAM
-  - JAVA
-  - Spring Framework
-  - REST API (Postman & Insomnia)
-  - Databases: SQL (MySQL & PostgreSQL)
+*Hi there!* 👋 <br>
+I’m currently pursuing a **Computer Systems Engineering** degree at UVEG while **specializing in Cybersecurity** at the Cybersecurity Academy. I’m fluent in three languages: **Spanish, English, and German**. I have a strong background in technology, including skills in <em>**networks, Linux, and operating systems**</em>. I’ve completed the **Back-End track** with **Oracle Next Education** in partnership with Alura LATAM, where I honed my abilities in<em>**Java, Spring Framework, Databases and REST APIs**</em>. Additionally, I hold a **degree in Music** from UABC and have been a musician and a piano teacher for over 10 years now. On the side, I’m a proud cat owner and always excited to new experiences!✨
+
+I also hold several relevant certifications, including **ISC2 Certified in Cybersecurity**, **Certiprof Ethical Hacking Professional Certification**, and **Google Project Management Professional Certificate**. 
+<br>
+
+### **Education**
+
+- **Computer Systems Engineering (IT)** - *UVEG 2026* (EXP)
+- **Cybersecurity Specialization** - *Academia de Ciberseguridad 2026*
+- **Music Bachelors Degree (Piano)** - *UABC 2018*
 
 
-- I have a Degree in Music by UABC 
-- 🎹 I've been a musician and a piano teacher for about 10 years now. 
-- ✨ I have the cutest cat in the wold
-- 💬 Ask me about Piano
-
-### Relevant Certifications
+### **Relevant Certifications**
 
 - <b>ISC2 - Certified in Cybersecurity (CC)</b>
 - Certiprof - Ethical Hacking Professional Certification (CEHPC)
@@ -35,5 +30,5 @@ order: 4
 
 
 
-     📫 ##How to reach me: https://linktr.ee/celesteamador
+📫 How to reach me: [[Linktree]](https://linktr.ee/celesteamador) [[LinkedIn]](https://www.linkedin.com/in/celesteamador)
 
