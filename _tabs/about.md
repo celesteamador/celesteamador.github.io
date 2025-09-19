@@ -12,19 +12,24 @@ I also hold several relevant certifications, including **ISC2 Certified in Cyber
 
 ### **Education**
 
-- **Computer Systems Engineering (IT)** - *UVEG 2026* (EXP)
+- **Computer Systems Engineering (IT)** - *UVEG Spring 2026* 
 - **Cybersecurity Specialization** - *Academia de Ciberseguridad 2026*
-- **Music Bachelors Degree (Piano)** - *UABC 2018*
+- **Bachelor's in Music (Piano)** - *UABC Spring 2018*
 
 
 ### **Relevant Certifications**
 
+- <b>CompTIA - Security+ (SY0-701)</b>
+- <b>CompTIA - Network+ (N10-009)</b>
+- <b>CompTIA - CySA+ (in progress)</b>
 - <b>ISC2 - Certified in Cybersecurity (CC)</b>
 - Certiprof - Ethical Hacking Professional Certification (CEHPC)
 - <b>OSForensics Triage Certification</b>
 - <b>Postman API Fundamentals Student Expert</b>
+- <b>IBM - Artificial Intelligence Fundamentals</b>
 - Green Digital Skills Certificate
 - Skillfront - Certified Associate Scrum Fundamentals (CASF)
+- <b>Google - Professional Cybersecurity Certificate </b>
 - <b>Google - Project Management Profesional Certificate</b>
 
 
