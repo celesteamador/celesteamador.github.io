@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Write(C:\\Users\\lenno\\.claude\\projects\\C--Users-lenno-Documents-Resume-Website\\memory\\*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "agent",
+            "prompt": "Review this conversation and save any important facts, preferences, user information, project context, or feedback to memory files at C:\\Users\\lenno\\.claude\\projects\\C--Users-lenno-Documents-Resume-Website\\memory\\. Create or update markdown files with frontmatter (name, description, metadata.type: user/feedback/project/reference). Update MEMORY.md index with a one-line entry per file. Focus on what is non-obvious and would help future conversations start with full context.",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

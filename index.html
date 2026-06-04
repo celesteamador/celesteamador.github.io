@@ -3,8 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Celeste Amador — Cybersecurity & IT</title>
-  <meta name="description" content="Celeste Amador — IT Support Engineer, Threat Intelligence Researcher, and Piano Performer based in Alexandria, VA.">
+  <title>Celeste Amador — Automation, Data &amp; Security</title>
+  <meta name="description" content="Celeste Amador — Turning curiosity into code. Threat Intelligence Researcher and Automation Specialist working at the intersection of security, data, and AI. Based in Alexandria, VA.">
+  <meta name="keywords" content="Celeste Amador, cybersecurity, threat intelligence, security engineer, automation, Python, RAG, AI, SIEM, OSINT, CompTIA Security+, Network+, CySA+, ISC2, software development, data analysis">
+  <meta name="author" content="Celeste Amador">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://celesteamador.me/">
+  <meta property="og:title" content="Celeste Amador — Turning curiosity into code | Automation, Data &amp; Security">
+  <meta property="og:description" content="Engineer and problem-solver across software development, automation, data, and cybersecurity. Part engineer, part musician, all curiosity. CompTIA + ISC2 certified.">
+  <meta property="og:image" content="https://celesteamador.me/assets/og-share.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://celesteamador.me/">
+  <meta name="twitter:title" content="Celeste Amador — Turning Curiosity into Code">
+  <meta name="twitter:description" content="Software Development · Automation & Data · Cybersecurity. Part engineer, part musician, all curiosity.">
+  <meta name="twitter:image" content="https://celesteamador.me/assets/og-share.jpg">
+
+  <!-- Schema.org Person JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Celeste Amador",
+    "alternateName": "Celeste Amador Montero",
+    "jobTitle": "IT Consultant, Software Developer & Security Researcher",
+    "description": "Engineer and problem-solver across software development, automation, data, and cybersecurity. Part engineer, part musician, all curiosity.",
+    "url": "https://celesteamador.me/",
+    "email": "mailto:celesteamador@proton.me",
+    "image": "https://celesteamador.me/assets/headshot.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Alexandria",
+      "addressRegion": "VA",
+      "addressCountry": "US"
+    },
+    "knowsLanguage": ["English", "Spanish", "German"],
+    "sameAs": [
+      "https://github.com/celesteamador",
+      "https://linkedin.com/in/celesteamador",
+      "https://substack.com/@celesteamador",
+      "https://blog.celesteamador.me"
+    ],
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "name": "CompTIA Security+", "dateCreated": "2025-04-14"},
+      {"@type": "EducationalOccupationalCredential", "name": "CompTIA Network+", "dateCreated": "2025-09-12"},
+      {"@type": "EducationalOccupationalCredential", "name": "ISC2 Certified in Cybersecurity", "dateCreated": "2024-09-01"}
+    ],
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Virtual University of the State of Guanajuato"},
+      {"@type": "CollegeOrUniversity", "name": "Universidad Autónoma de Baja California"}
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -21,9 +76,11 @@
       </button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#now">Now</a></li>
         <li><a href="#music">Music</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -32,16 +89,38 @@
 
   <!-- Hero -->
   <section class="hero" id="hero">
-    <div class="hero-bg-pattern"></div>
+    <canvas id="matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
     <div class="hero-content">
       <div class="hero-text">
         <p class="hero-greeting">Hello, I'm</p>
         <h1 class="hero-name">Celeste Amador</h1>
-        <p class="hero-tagline">Cybersecurity &amp; IT Professional</p>
-        <p class="hero-summary">Threat intelligence researcher and automation specialist with a background in Python scripting, SIEM analysis, and API security. Trilingual professional blending technical precision with creative thinking.</p>
+        <p class="hero-tagline"><span id="typed-tagline"></span><span class="type-cursor" aria-hidden="true">|</span></p>
+        <p class="hero-subtagline"><span>Software Development</span><span class="tagline-sep">|</span><span>Automation &amp; Data</span><span class="tagline-sep">|</span><span>Cybersecurity</span></p>
+        <p class="hero-summary">Engineer and problem-solver across software development, automation, data, and cybersecurity. CompTIA and ISC2 certified, with hands-on experience in Python automation, API and database testing, RAG/AI workflows, and OSINT-driven security research. Fast learner, polyglot communicator, with a foundation in engineering and classical piano.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get in Touch</a>
           <a href="assets/Celeste_Amador_Resume_Tech.pdf" class="btn btn-secondary" download>Download Resume</a>
+        </div>
+        <div class="hero-stats" aria-label="Key metrics">
+          <div class="stat-item">
+            <span class="stat-num" data-target="80" data-suffix="%">0%</span>
+            <span class="stat-desc">Investigation<br>time reduced</span>
+          </div>
+          <span class="stat-divider" aria-hidden="true"></span>
+          <div class="stat-item">
+            <span class="stat-num" data-target="75" data-suffix="%">0%</span>
+            <span class="stat-desc">Web protections<br>bypassed</span>
+          </div>
+          <span class="stat-divider" aria-hidden="true"></span>
+          <div class="stat-item">
+            <span class="stat-num" data-target="89" data-suffix="%">0%</span>
+            <span class="stat-desc">RAG system<br>accuracy</span>
+          </div>
+          <span class="stat-divider" aria-hidden="true"></span>
+          <div class="stat-item">
+            <span class="stat-num" data-target="4" data-suffix="">0</span>
+            <span class="stat-desc">Certifications<br>earned</span>
+          </div>
         </div>
         <div class="hero-socials">
           <a href="https://github.com/celesteamador" target="_blank" rel="noopener" aria-label="GitHub">
@@ -70,14 +149,19 @@
     </div>
   </section>
 
+  <!-- Hero gradient transition -->
+  <div class="hero-fade" aria-hidden="true"></div>
+
   <!-- About -->
   <section class="section about" id="about">
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>I'm a cybersecurity and IT professional based in Alexandria, VA, with a unique path that bridges technology, education, and the arts. My background in threat intelligence, Python automation, and security analysis is complemented by years of experience as a piano teacher and performer.</p>
-          <p>I thrive at the intersection of analytical rigor and creative problem-solving — whether I'm designing automation scripts that reduce investigation time by 80%, building RAG systems with 89% accuracy benchmarks, or teaching complex concepts to diverse learners.</p>
+          <p class="about-hook">Part engineer, part musician, all curiosity.</p>
+          <p class="about-open"><span class="about-dot"></span>Open to new opportunities</p>
+          <p>I combine technical skill with critical thinking to solve problems that matter. Whether I'm building automation pipelines, hardening a server, or analyzing threat data, I bring the same discipline I developed as a trained classical pianist: attention to detail, patience under pressure, and the habit of practicing until things work beautifully.</p>
+          <p>Certified across CompTIA Security+, Network+, and ISC2 CC — with CySA+ in progress — I'm driven to keep expanding into new domains within tech. Adaptable, quick to learn, and polyglot.</p>
         </div>
         <div class="about-details">
           <div class="detail-card">
@@ -91,9 +175,9 @@
           <div class="detail-card">
             <h3>Education</h3>
             <ul class="detail-list">
-              <li>B.S. Computer Systems Engineering (IoT) — Virtual University of the State of Guanajuato</li>
-              <li>Specialization in Web3 Development &amp; Smart Contract Security — Blockchain Accelerator</li>
-              <li>B.M. in Music, Piano Performance — Autonomous University of Baja California</li>
+              <li><strong>B.S. Computer Systems Engineering (IoT)</strong> — Virtual University of the State of Guanajuato</li>
+              <li><strong>Specialization in Web3 Development &amp; Smart Contract Security</strong> — Blockchain Accelerator</li>
+              <li><strong>B.M. in Music, Piano Performance</strong> — Autonomous University of Baja California</li>
             </ul>
           </div>
         </div>
@@ -101,21 +185,134 @@
     </div>
   </section>
 
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming &amp; Scripting</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Python</span><span>Java (Spring Boot)</span><span>C++</span><span>Solidity</span><span>SQL</span><span>JavaScript</span><span>Bash</span><span>PowerShell</span><span>HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>Data &amp; AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Data Analysis (Python, SQL)</span><span>RAG Pipelines</span><span>Vector Embeddings (Qdrant)</span><span>Workflow Automation (n8n)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Cloud &amp; DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Podman</span><span>Docker</span><span>AWS</span><span>Azure</span><span>GCP</span><span>Git / GitHub</span><span>CI/CD Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+            </div>
+            <h3>APIs &amp; Testing</h3>
+          </div>
+          <div class="skill-tags">
+            <span>REST API Design &amp; Testing</span><span>Postman</span><span>Insomnia</span><span>Regression Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Cybersecurity</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Threat Intelligence</span><span>SIEM (Elastic, Wazuh)</span><span>Burp Suite</span><span>Metasploit</span><span>Nmap</span><span>OSINT (Shodan, Spiderfoot)</span><span>NIST</span><span>MITRE ATT&amp;CK</span><span>OWASP Top 10</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3>Systems &amp; Networking</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Linux (Fedora, Kali, Ubuntu, Debian, Parrot)</span><span>Windows (AD, Policy Mgmt)</span><span>Wireshark</span><span>Cisco Packet Tracer</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Spanish — Native</span><span>English — Bilingual</span><span>German — Proficient</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Inter-section quote -->
+  <div class="section-quote" aria-hidden="true">
+    <blockquote>&ldquo;Turning curiosity into code; where creativity meets technology.&rdquo;</blockquote>
+  </div>
+
   <!-- Experience -->
   <section class="section experience" id="experience">
     <div class="container">
       <h2 class="section-title">Professional Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
+          <div class="timeline-marker timeline-marker-current"></div>
+          <div class="timeline-date">Jun 2026 — Present</div>
+          <div class="timeline-card">
+            <span class="timeline-badge" title="Full-circle moment: engineering at a music school">&#9835; Full circle</span>
+            <h3>IT Consultant &amp; Web Developer</h3>
+            <p class="company">Old Town Music School (OTMS) — Alexandria, VA</p>
+            <ul>
+              <li>Leading migration off an outdated WordPress deployment to a new hosting provider and a more secure, higher-performance architecture &mdash; mapping databases and optimizing server configuration.</li>
+              <li>Redesigning the school&rsquo;s website and building a new inquiry-management workflow to streamline how prospective-student requests are captured and handled.</li>
+              <li>Managing domain registration, hosting integration, and access control to keep operations uninterrupted and digital assets secure.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-date">Jun 2025 — Jan 2026</div>
           <div class="timeline-card">
-            <h3>Threat Intelligence Research Intern <span class="role-detail">(Automation Specialist)</span></h3>
-            <p class="company">Soluciones en Tecnolog&iacute;a y Ciberseguridad S.A de C.V</p>
+            <h3>Security Research Intern <span class="role-detail">(Threat Intelligence, Automation &amp; Engineering)</span></h3>
+            <p class="company">Solutions in Technology and Cybersecurity (STC) — Mexico City, MX (Remote)</p>
             <ul>
-              <li>Analyzed web protection mechanisms including Cloudflare and anti-bot systems, successfully circumventing 5 of 7 to improve security research effectiveness.</li>
-              <li>Conducted open-source investigations using cyber intelligence tools, leading to actionable insights and enhanced data correlation.</li>
-              <li>Designed and deployed Python automation scripts, reducing manual investigation time by 80%.</li>
+              <li>Analyzed web protection mechanisms (Cloudflare, anti-bot systems) as part of authorized security research, developing standardized procedures that bypassed ~75% to assess detection effectiveness.</li>
+              <li>Conducted open-source intelligence (OSINT) investigations using cyber-intelligence tools, producing actionable insights through improved data correlation.</li>
+              <li>Designed and deployed Python automation scripts that strengthened data collection and correlation, cutting manual investigation time by 80%.</li>
             </ul>
           </div>
         </div>
@@ -124,59 +321,10 @@
           <div class="timeline-date">Oct 2024 — Apr 2025</div>
           <div class="timeline-card">
             <h3>Technical English Instructor</h3>
-            <p class="company">Academia de Ciberseguridad</p>
+            <p class="company">Cybersecurity Academy — Mexico City, MX (Remote)</p>
             <ul>
-              <li>Delivered a tailored 16-week English course for 50+ IT professionals focused on cybersecurity terminology, improving comprehension by 30%.</li>
-              <li>Provided technical assistance in Moodle, Canvas, and Teams, resolving 98% of access issues.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-date">2018 — 2025</div>
-          <div class="timeline-card">
-            <h3>Piano &amp; Music Theory Teacher</h3>
-            <p class="company">Self-employed — Baja California, Mexico</p>
-            <ul>
-              <li>Tailored piano and music theory instruction to students, adapting content to varied learning styles and skill levels.</li>
-              <li>Implemented individualized approaches to piano technique, focusing on hand position, articulation, dynamics, and injury-preventive practice strategies.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-date">2018 — 2024</div>
-          <div class="timeline-card">
-            <h3>Chamber Music Collaborative Pianist</h3>
-            <p class="company">Freelance — Baja California, Mexico</p>
-            <ul>
-              <li>Performed regularly as a collaborative pianist in chamber ensembles, accompanying soloists, vocalists, and instrumentalists across diverse repertoires.</li>
-              <li>Rehearsed and performed under time-sensitive conditions, demonstrating precision, flexibility, and real-time musical decision-making.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-date">2018 — 2021</div>
-          <div class="timeline-card">
-            <h3>Piano Teacher</h3>
-            <p class="company">State Center for the Arts (CEART) — Mexicali, Baja California</p>
-            <ul>
-              <li>Developed clear, engaging presentations and explanations for complex musical concepts.</li>
-              <li>Prepared students for public performances, auditions, and music exams with personalized coaching.</li>
-              <li>Designed structured learning plans and assessment tools to track student progress.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-date">2018 — 2021</div>
-          <div class="timeline-card">
-            <h3>Piano Instructor for Artistic Talents Scholars</h3>
-            <p class="company">Baja California Institute of Culture (ICBC) — Mexicali, Baja California</p>
-            <ul>
-              <li>Provided piano mentorships and classes to students granted the Award of Artistic Talents.</li>
-              <li>Prepared students with repertoire and coached them to perform in the final recital.</li>
+              <li>Designed and delivered a 16-week technical English course for 50+ IT professionals (Cybersecurity/IT terminology and documentation), improving comprehension of key terms by 30%.</li>
+              <li>Supported students across Moodle, Canvas, and Teams, resolving 98% of access issues.</li>
             </ul>
           </div>
         </div>
@@ -264,6 +412,13 @@
           <div class="cert-badge">
             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-2 5l2-1l2 1l-2-5z"/><circle cx="12" cy="9" r="6"/><path d="M9 9l1.5 1.5L14 7"/></svg>
           </div>
+          <h3>ISC2 Certified in Cybersecurity</h3>
+          <p class="cert-date">September 2024</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-2 5l2-1l2 1l-2-5z"/><circle cx="12" cy="9" r="6"/><path d="M9 9l1.5 1.5L14 7"/></svg>
+          </div>
           <h3>CompTIA Security+</h3>
           <p class="cert-date">April 2025</p>
         </div>
@@ -274,13 +429,110 @@
           <h3>CompTIA Network+</h3>
           <p class="cert-date">September 2025</p>
         </div>
-        <div class="cert-card">
+        <div class="cert-card cert-in-progress">
           <div class="cert-badge">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-2 5l2-1l2 1l-2-5z"/><circle cx="12" cy="9" r="6"/><path d="M9 9l1.5 1.5L14 7"/></svg>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
+          <span class="cert-status">In Progress</span>
           <h3>CompTIA CySA+</h3>
           <p class="cert-date">Expected June 2026</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section education" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-dates">Jun 2023 — Jan 2026</div>
+          <div class="edu-body">
+            <h3>B.S. in Computer Systems Engineering</h3>
+            <p class="edu-sub">IoT Concentration</p>
+            <p class="edu-school">Virtual University of the State of Guanajuato</p>
+            <p class="edu-detail">Coursework: IoT, Embedded Software, Communication &amp; Interfaces, Electronics, Programming Systems, IoT Programming</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-dates">Dec 2025 — Sep 2026</div>
+          <div class="edu-body">
+            <h3>Specialization in Web3 Development &amp; Smart Contract Security</h3>
+            <p class="edu-school">Blockchain Accelerator</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-dates">Sep 2012 — May 2018</div>
+          <div class="edu-body">
+            <h3>B.M. in Music</h3>
+            <p class="edu-sub">Piano Performance &amp; Pedagogy Concentration</p>
+            <p class="edu-school">Universidad Aut&oacute;noma de Baja California</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Currently / Now -->
+  <section class="section now" id="now">
+    <div class="container">
+      <h2 class="section-title">Currently</h2>
+      <div class="now-grid">
+        <div class="now-card now-open">
+          <div class="now-icon">
+            <span class="now-dot"></span>
+          </div>
+          <div class="now-content">
+            <h3>Open to New Opportunities</h3>
+            <p>Available and actively looking. Let&rsquo;s talk.</p>
+            <a href="#contact" class="btn btn-primary" style="margin-top:12px;display:inline-flex;">Get in Touch</a>
+          </div>
+        </div>
+        <div class="now-card">
+          <div class="now-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="now-content">
+            <h3>Studying</h3>
+            <p>Preparing for <strong>CompTIA CySA+</strong> (expected June 2026).</p>
+          </div>
+        </div>
+        <div class="now-card">
+          <div class="now-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="now-content">
+            <h3>Building</h3>
+            <ul class="now-list">
+              <li>This website &mdash; with Claude Code</li>
+              <li>Hardening an Ubuntu VPS with Docker for DevOps, AI agents &amp; automation</li>
+              <li>Learning <strong>Solidity</strong> &amp; Blockchain development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="now-card">
+          <div class="now-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div class="now-content">
+            <h3>Reading</h3>
+            <p><em><a href="https://ifanyonebuildsit.com/" target="_blank" rel="noopener">If Anyone Builds It, Everyone Dies</a></em> &mdash; Yudkowsky &amp; Soares</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog / Writing -->
+  <section class="section blog" id="blog">
+    <div class="container">
+      <h2 class="section-title">Writing</h2>
+      <p class="blog-intro">Thoughts on security, automation, AI, and the occasional rabbit hole.</p>
+      <div class="blog-feed" id="blog-feed"></div>
+      <div class="blog-links">
+        <a href="https://substack.com/@celesteamador" target="_blank" rel="noopener" class="btn btn-secondary">Read on Substack &rarr;</a>
+        <a href="https://blog.celesteamador.me" target="_blank" rel="noopener" class="btn btn-tertiary">Visit Blog &rarr;</a>
       </div>
     </div>
   </section>
@@ -295,6 +547,46 @@
           <p>My music career included private instruction, collaborative chamber performances, and teaching at the State Center for the Arts (CEART) and the Baja California Institute of Culture (ICBC), where I mentored students awarded the Artistic Talents scholarship.</p>
           <p>In 2020, I was awarded <strong>FONDARTE</strong> by the Baja California Institute of Culture for a collaboration project with the Classical Femmes ensemble — a grant supporting independent artistic and cultural activities.</p>
           <p>This background gives me a distinctive edge: the discipline of performance, the patience of teaching, and the creativity of artistic collaboration — all of which I bring to my technical work every day.</p>
+        </div>
+        <div class="music-timeline">
+          <div class="music-role">
+            <span class="music-role-dates">2018 — 2025</span>
+            <div class="music-role-body">
+              <h4>Piano &amp; Music Theory Teacher</h4>
+              <p>Self-employed — Baja California, Mexico</p>
+            </div>
+          </div>
+          <div class="music-role">
+            <span class="music-role-dates">2018 — 2024</span>
+            <div class="music-role-body">
+              <h4>Chamber Music Collaborative Pianist</h4>
+              <p>Freelance — Baja California, Mexico</p>
+            </div>
+          </div>
+          <div class="music-role">
+            <span class="music-role-dates">2018 — 2021</span>
+            <div class="music-role-body">
+              <h4>Piano Teacher</h4>
+              <p>State Center for the Arts (CEART) — Mexicali, Baja California</p>
+            </div>
+          </div>
+          <div class="music-role">
+            <span class="music-role-dates">2018 — 2021</span>
+            <div class="music-role-body">
+              <h4>Piano Instructor for Artistic Talents Scholars</h4>
+              <p>Baja California Institute of Culture (ICBC) — Mexicali, Baja California</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fondarte-award">
+          <div class="fondarte-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="fondarte-text">
+            <strong>FONDARTE 2020</strong> — Baja California Institute of Culture
+            <span>Grant for independent artistic and cultural activities. Awarded for collaboration with the <em>Classical Femmes</em> ensemble.</span>
+          </div>
         </div>
         <div class="music-highlights">
           <div class="music-stat">
